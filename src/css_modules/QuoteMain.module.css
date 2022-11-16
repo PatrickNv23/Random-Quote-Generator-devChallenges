@@ -1,0 +1,24 @@
+.containerQuoteMain {
+  width: 60%;
+  height: 80%;
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.containerTextQuoteRandomMain {
+  width: 100%;
+  /* background-color: aqua; */
+  height: 70%;
+  border-left: 8px solid #F7DF94;
+}
+
+.textQuoteRandomMain {
+  padding-left: 99px;
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 36px;
+}
