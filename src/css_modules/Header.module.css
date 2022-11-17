@@ -3,13 +3,11 @@
   height: 12%;
   display: flex;
   justify-content: flex-end;
-  /* background-color: green; */
 }
 
 
 .containerTextHeader {
   width: 10%;
-  /* background-color: aqua; */
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,7 +1,7 @@
 import React from 'react'
 import AuthorCard from './AuthorCard'
 import styles from '../css_modules/QuoteMain.module.css'
-import { useRandomQuote } from '../hooks/useRandomQuote.jsx'
+import { useFetch } from '../hooks/useFetch.jsx'
 import Loader from './Loader.jsx';
 import { animated, useSpring } from '@react-spring/web';
 export default function QuoteMain() {
@@ -11,17 +11,18 @@ export default function QuoteMain() {
     to: { x: 0 }
   })
 
-  const randomQuote = useRandomQuote("https://quote-garden.herokuapp.com/api/v3/quotes/random", {
-    stringRandomQuote: "",
-    author: "",
-    genre: ""
-  });
+  const randomQuote = useFetch("https://quote-garden.herokuapp.com/api/v3/quotes/random");
 
-  if (randomQuote.stringRandomQuote === "") {
+  if (Object.keys(randomQuote).length === 0) {
     return <Loader />
   }
 
+  const stringRandomQuote = randomQuote?.data[0].quoteText;
 
+  const infoAuthor = {
+    author: randomQuote?.data[0].quoteAuthor,
+    genre: randomQuote?.data[0].quoteGenre
+  }
 
   return (
     <animated.div style={{
@@ -37,11 +38,10 @@ export default function QuoteMain() {
     }}>
       <div className={styles.containerTextQuoteRandomMain}>
         <p className={styles.textQuoteRandomMain}>
-          {randomQuote.stringRandomQuote}
+          {stringRandomQuote}
         </p>
       </div>
-      <AuthorCard infoAuthor={randomQuote} />
+      <AuthorCard infoAuthor={infoAuthor} />
     </animated.div >
-
   )
 }
