@@ -1,0 +1,17 @@
+.containerTextQuoteItem {
+  width: 50%;
+  height: auto;
+  border-left: 8px solid #F7DF94;
+  margin-bottom: 10%;
+  /* background-color: antiquewhite; */
+  margin-left: 20%;
+  margin-top: 140px;
+}
+
+.textQuoteItem {
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 36px;
+  color: #000000;
+  padding-left: 99px;
+}

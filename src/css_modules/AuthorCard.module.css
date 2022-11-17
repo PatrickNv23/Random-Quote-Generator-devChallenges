@@ -1,5 +1,11 @@
-.containerRandomAuthor {
+.linkRedirectAuthorPage {
   width: 85%;
+  height: auto;
+  text-decoration: none;
+}
+
+.containerRandomAuthor {
+  width: 100%;
   height: 151px;
   /* background-color: green; */
   display: flex;
