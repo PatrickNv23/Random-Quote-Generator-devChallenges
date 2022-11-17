@@ -59,3 +59,28 @@
 .containerIconRedirectAllQuotesOfAuthor>span {
   padding-left: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+  .linkRedirectAuthorPage {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .containerRandomAuthor {
+    height: 100px;
+    margin-top: 0;
+    padding-left: 10px;
+  }
+
+  .nameRandomAuthor {
+    font-size: 14px;
+  }
+
+  .topicOfRandomAuthor {
+    font-size: 12px;
+  }
+
+  .containerNameRandomAuthor {
+    margin-left: 0;
+  }
+}

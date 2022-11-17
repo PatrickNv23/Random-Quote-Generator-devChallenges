@@ -1,6 +1,7 @@
 .containerQuoteMain {
   width: 60%;
-  height: 80%;
+  height: 100%;
+  max-height: auto;
   /* background-color: yellow; */
   display: flex;
   flex-direction: column;
@@ -12,7 +13,8 @@
 .containerTextQuoteRandomMain {
   width: 100%;
   /* background-color: aqua; */
-  height: 70%;
+  height: auto;
+  max-height: auto;
   border-left: 8px solid #F7DF94;
 }
 
@@ -21,4 +23,19 @@
   font-family: 'Raleway';
   font-weight: 500;
   font-size: 36px;
+}
+
+
+@media only screen and (max-width: 845px) {
+  .textQuoteRandomMain {
+    font-size: 20px;
+    padding-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .textQuoteRandomMain {
+    font-size: 20px;
+    padding-left: 20px;
+  }
 }

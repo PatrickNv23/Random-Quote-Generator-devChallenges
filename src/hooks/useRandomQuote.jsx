@@ -18,7 +18,7 @@ export const useRandomQuote = (url, defaultValue) => {
           author: data_json.data[0].quoteAuthor,
           genre: data_json.data[0].quoteGenre
         });
-        console.log(data_json.data[0].quoteText)
+
       } catch (e) {
         let message = e.statusText || "unknown"
         console.error(`Error ${e.status}: ${message}`)

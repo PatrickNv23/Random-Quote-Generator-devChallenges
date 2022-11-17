@@ -10,7 +10,7 @@ export default function AuthorCard({ infoAuthor }) {
           <span className={styles.topicOfRandomAuthor}>{infoAuthor.genre}</span>
         </div>
         <div className={styles.containerIconRedirectAllQuotesOfAuthor}>
-          <span className="material-icons-outlined">
+          <span style={{ color: "white" }} className="material-icons-outlined">
             arrow_right_alt
           </span>
         </div>
