@@ -1,6 +1,4 @@
-<!-- Please update value in the {}  -->
-
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Random Quote Generator - Dev Challenges</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://todoappnv.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/PatrickNv23/Random-Quote-Generator-devChallenges">
       Solution
     </a>
     <span> | </span>
@@ -37,45 +35,51 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://raw.githubusercontent.com/PatrickNv23/TodoApp-devChallenges/main/public/todoapp_all.png)
+![screenshot](https://raw.githubusercontent.com/PatrickNv23/TodoApp-devChallenges/main/public/todoapp_active.png)
+![screenshot](https://raw.githubusercontent.com/PatrickNv23/TodoApp-devChallenges/main/public/todoapp_completed.png)
+![screenshot](https://raw.githubusercontent.com/PatrickNv23/TodoApp-devChallenges/main/public/todoapp_responsive.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+- Where can I see your demo?  
+  This frontend challenge was uploaded to the Netlify domains, because it is a very powerful service to upload your React projects to the internet.
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+- What was your experience?  
+  My experience at the end of this challenge has been satisfactory, since it made me review concepts that I had forgotten, it also helped me reinforce my knowledge of React such as React Context, React Router, state management, API requests with fetch, etc.  
+  Finally, I reinforced my knowledge of CSS flexbox using CSS modules and adapting the application for different mobile devices.
+
+- What have you learned/improved?  
+  I improved my knowledge of custom hooks to reuse them and have a cleaner code, also, I got to know the basics of the React-spring library to make some animations.  
+  Finally, I learned how to manage timeout using a loader while data is coming from an api, this way, it allows me to control the information that is displayed on the screen, and avoid rendering components without information.
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [CSS Modules](https://github.com/css-modules/css-modules)
+- [React-Spring](https://react-spring.dev/)
 
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/8Y3J4ucAMQpSnYTwwWW8) was to build an application to complete the given user stories.
-
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/) challenge. The [challenge](https://devchallenges.io/challenges/8Y3J4ucAMQpSnYTwwWW8) was to build an application to complete the given user stories.
 
 ## How To Use
 
-<!-- For example: -->
+<!-- Example: -->
 
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
-# Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+# Clone this repository, I used Vite instead of React-create-app
+$ git clone https://github.com/PatrickNv23/Random-Quote-Generator-devChallenges
 
 # Install dependencies
 $ npm install
 
-# Run the app
-$ npm start
+# Run the app with Vite
+$ npm run dev
 ```
 
 ## Acknowledgements
@@ -88,6 +92,4 @@ $ npm start
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@PatrickNv23](https://github.com/PatrickNv23)
