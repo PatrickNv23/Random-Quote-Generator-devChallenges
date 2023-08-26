@@ -7,7 +7,7 @@ import QuoteCard from './QuoteCard.jsx';
 export default function QuoteList() {
 
   const { name } = useParams();
-  const allQuotes = useFetch(`https://quote-garden.herokuapp.com/api/v3/quotes?author=${name}`);
+  const allQuotes = useFetch(`https://quote-garden.onrender.com/api/v3/quotes?author=${name}`);
 
   if (Object.keys(allQuotes).length === 0) {
     return <Loader />

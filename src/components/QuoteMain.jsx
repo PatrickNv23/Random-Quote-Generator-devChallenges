@@ -11,7 +11,7 @@ export default function QuoteMain() {
     to: { x: 0 }
   })
 
-  const randomQuote = useFetch("https://quote-garden.herokuapp.com/api/v3/quotes/random");
+  const randomQuote = useFetch("https://quote-garden.onrender.com/api/v3/quotes/random");
 
   if (Object.keys(randomQuote).length === 0) {
     return <Loader />
